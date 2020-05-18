@@ -16,7 +16,7 @@ export default function ({ config, router, store }, authStore) {
     }
 
     const getter = state => state[config.vuex.namespace].loggedIn
-    const callback = v => redirectTo(v ? config.redirect.auth : config.redirect.guest)
+    const callback = v => redirectTo(v ? config.redirect.routes.auth : config.redirect.routes.guest)
 
     store.watch(getter, callback)
   }

@@ -14,9 +14,12 @@ export default {
     namespace: '$auth'
   },
   redirect: {
-    auth: '/profile',
-    guest: '/',
-    queryFrom: 'from'
+    routes: {
+      auth: '/profile',
+      guest: '/',
+    },
+    queryFrom: 'from',
+    guard: ({ $auth }) => $auth.loggedIn,
   },
   endpoints: {
     authenticate: {

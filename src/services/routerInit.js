@@ -1,30 +1,16 @@
-export default function ({ config, router, store }, permission) {
-  router.beforeEach((to, from, next) => {
-    const route = to.matched.find(r => typeof r.meta.auth === 'boolean')
+import { middleware } from 'vue-router-auth';
 
-    function getRouteTo () {
-      const meta = to.meta.authTo || route.meta.authTo
+export default function (context) {
+  const { config, router } = context;
 
-      return typeof meta === 'function'
-        ? meta({ to, from, config, router, store })
-        : meta
-    }
+  const options = {
+    router,
+    guard: config.redirect.guard,
+    routes: config.redirect.routes,
+    context: {
+      context,
+    },
+  };
 
-    const actions = [
-      {
-        condition: route && route.meta.auth && !permission(),
-        callback: () => router.replace(getRouteTo() || config.redirect.guest)
-      },
-      {
-        condition: route && !route.meta.auth && permission(),
-        callback: () => router.replace(getRouteTo() || config.redirect.auth)
-      },
-      {
-        condition: true,
-        callback: () => next()
-      }
-    ]
-
-    actions.find(action => action.condition).callback()
-  })
+  router.beforeEach(middleware(options));
 }

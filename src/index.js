@@ -27,7 +27,7 @@ export default async function (ctx) {
   const auth = new Auth(context, httpClient, strategy)
 
   storeInit(context, store)
-  routerInit(context, () => auth.loggedIn)
+  routerInit(context)
 
   Vue.prototype.$auth = auth
 
