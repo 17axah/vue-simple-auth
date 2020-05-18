@@ -1,13 +1,23 @@
 {
   "name": "vue-simple-auth",
   "version": "1.0.0",
-  "description": "vue auth service",
+  "description": "Vue authorization module",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/17axah/vue-simple-auth.git"
   },
-  "author": "Gainulin Rustam",
-  "license": "ISC",
+  "keywords": [
+    "vue",
+    "router",
+    "auth",
+    "guard",
+    "jwt",
+    "token",
+    "vuejs",
+  ],
+  "author": "Rustam",
+  "license": "MIT",
   "dependencies": {
     "vue-router-auth": "^1.0.1"
   }
