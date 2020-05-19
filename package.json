@@ -14,7 +14,7 @@
     "guard",
     "jwt",
     "token",
-    "vuejs",
+    "vuejs"
   ],
   "author": "Rustam",
   "license": "MIT",
