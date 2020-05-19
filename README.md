@@ -59,11 +59,10 @@ export default {
   },
 }
 ```
+
 The login method accepts credentials and returns a Promise. This action takes place in two stages:
-<br>
-1. A request to receive a jwt token.
-<br>
-2. Request for user data (***$auth.loginByToken***), saving user data in the store.
+* A request to receive a jwt token.
+* Request for user data ***$auth.loginByToken***, saving user data in the store.
 
 ### Login by token
 ```js
@@ -139,9 +138,9 @@ export default {
 Updating user data from the server.
 
 ### Auth store
-***$auth.user*** - Local user data storage.
-***$auth.token*** - Current token.
-***$auth.loggedIn*** - Flag indicating whether the user is authorized or not.
+***$auth.user*** - Local user data storage. <br>
+***$auth.token*** - Current token. <br>
+***$auth.loggedIn*** - Flag indicating whether the user is authorized or not. <br>
 
 
 
