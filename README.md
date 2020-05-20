@@ -4,6 +4,14 @@ Very flexible and easily customizable authorization module using jwt token. It h
 <br>
 [vue-router-auth](https://github.com/17axah/vue-router-auth) is used to configure routes.
 
+<br>
+<br>
+If you find an error, incorrect behavior please open the corresponding
+[issue](https://github.com/17axah/vue-simple-auth/issues)
+<br>
+<br>
+<br>
+
 ## :v: Setup
 ```bash
 $ npm i vue-simple-auth
