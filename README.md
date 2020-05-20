@@ -3,14 +3,13 @@
 Very flexible and easily customizable authorization module using jwt token. It has SSR support.
 <br>
 [vue-router-auth](https://github.com/17axah/vue-router-auth) is used to configure routes.
-
 <br>
 <br>
 If you find an error, incorrect behavior please open the corresponding
-[issue](https://github.com/17axah/vue-simple-auth/issues)
-<br>
-<br>
-<br>
+[issue](https://github.com/17axah/vue-simple-auth/issues). <br>
+Please also rate this [repository](https://github.com/17axah/vue-simple-auth). :blush:
+
+<hr>
 
 ## :v: Setup
 ```bash
