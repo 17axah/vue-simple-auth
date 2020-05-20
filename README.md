@@ -28,8 +28,10 @@ export default async function({ router, store, ssrContext }) {
 ```
 ### :warning: Important!
 During initialization, you should already have an http client installed. That is, *Vue.prototype.$axios* or *Vue.prototype.$http* should already exist.
-
-===
+<br>
+<br>
+<br>
+<br>
 In the example above, there are two obscure points: **1.** cookies, **2.** Asynchronous initialization function.
 <br>
 **1.** Cookies are necessary for us for SSR. Therefore, we transfer a universal object of interaction with cookies to the module.
